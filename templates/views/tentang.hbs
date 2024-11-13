@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{judul}}</title>
+    <link rel="icon" href="/img/logo.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        /* CSS tambahan untuk menghilangkan titik pada daftar */
+        .no-bullet {
+            list-style-type: none;
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="main-content">
+        {{>header}} <!-- Menyertakan header -->
+        <img src="/img/foto.png" alt="Foto pengembang" class="profile-pic" width="150" height="auto">
+        <p>Dikembangkan oleh <strong>{{nama}}</strong></p>
+        <p>Lahir pada tanggal 14 Agustus 2004</p>
+        <p>Saya seorang mahasiswi dari kampus Universitas Negeri Padang</p>
+        <p>Saya adalah seorang mahasiswi yang antusias dalam dunia teknologi informasi</p>
+        <p>Saya memiliki hobby membuat konten</p>
+        <p>Life's better on Saturn</p>
+
+        <!-- Bagian Kontak Saya -->
+        <div class="contact-info">
+            <h3>Kontak Saya</h3>
+            <ul class="no-bullet">
+                <li>Email: salsha.elita@gmail.com</li>
+                <li>WhatsApp: +6285264113510</li>
+                <li>Instagram: @salshabsp</li>
+            </ul>
+        </div>
+
+        <!-- Bagian Pendidikan -->
+        <div class="education">
+            <h3>Pendidikan</h3>
+            <ul class="no-bullet">
+                <li><strong>Universitas Negeri Padang</strong> - Informatika (2022 - Sekarang)</li>
+            </ul>
+        </div>
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+</html>

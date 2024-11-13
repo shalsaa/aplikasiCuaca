@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Info Cuaca</title>
+    <script>
+        // Objek JSON
+        const infoCuaca = {
+            "prediksiCuaca": "cuaca berpotensi hujan",
+            "lokasi": "Padang"
+        };
+
+        // Fungsi untuk menampilkan informasi cuaca
+        function tampilkanInfoCuaca() {
+            document.getElementById('cuaca').innerText = `Prediksi Cuaca: ${infoCuaca.prediksiCuaca}`;
+            document.getElementById('lokasi').innerText = `Lokasi: ${infoCuaca.lokasi}`;
+        }
+
+        // Menampilkan informasi cuaca saat halaman dimuat
+        window.onload = tampilkanInfoCuaca;
+    </script>
+</head>
+<body>
+    <h1>Informasi Cuaca</h1>
+    <p id="cuaca"></p>
+    <p id="lokasi"></p>
+</body>
+</html>

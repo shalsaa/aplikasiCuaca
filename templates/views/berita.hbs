@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{judul}}</title>
+    <link rel="icon" href="/img/logo.png">
+    <link rel="stylesheet" href="/css/style-berita.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="main-content">
+        {{> header}}
+        <!-- Bagian Berita -->
+        <section class="news-section">
+            <h2>Berita Terkini</h2>
+            <p><em>"Mengetahui kondisi terkini di Indonesia."</em></p>
+            <div class="news-items">
+                {{#each berita}} <!-- Looping untuk menampilkan data berita -->
+                <div class="news-item">
+                    <h3>{{title}}</h3>
+                    <p>{{description}}</p>
+                    <a href="{{url}}" target="_blank">Baca Selengkapnya</a> <!-- Link ke artikel -->
+                </div>
+                {{/each}}
+            </div>
+        </section>
+
+        <!-- Bagian Berlangganan -->
+        <section class="subscribe-section">
+            <h3>Berlangganan untuk Update Cuaca Harian</h3>
+            <p>Masukkan email Anda untuk mendapatkan informasi cuaca harian terbaru langsung ke inbox Anda.</p>
+            <form action="/subscribe" method="POST">
+                <input type="email" name="email" placeholder="Email Anda" required>
+                <button type="submit">Berlangganan</button>
+            </form>
+        </section>
+        <script src="/js/berita.js"></script> <!-- Menghubungkan file berita.js -->
+        <script src="/js/app.js"></script>
+        {{> footer}} <!-- Menyertakan footer -->
+    </div>
+</body>
+</html>

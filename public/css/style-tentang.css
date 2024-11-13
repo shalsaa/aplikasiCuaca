@@ -1,0 +1,155 @@
+/* Reset margin, padding, dan box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #333;
+}
+
+/* Gambar latar belakang dengan efek transisi */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/bg.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: brightness(0.7);
+    transition: transform 10s ease, filter 5s ease;
+}
+
+/* Atur container utama */
+.main-content {
+    max-width: 800px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    animation: fadeIn 1.5s ease-out;
+    margin: 20px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+
+h2 {
+    font-size: 36px;
+    color: #26998c;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+p:hover {
+    color: #6AD9C1;
+}
+
+/* Animasi fade-in untuk konten */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    background: linear-gradient(90deg, #333, #007BFF);
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid rgb(208, 146, 146);
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 2px 10px rgba(211, 167, 167, 0.3);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.nav-penjelasan {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-penjelasan a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-penjelasan a:hover {
+    border: none;
+    background-color: #007BFF;
+}
+
+/* Bagian Kontak dan Pendidikan */
+.contact-info, .education {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info ul, .education ul {
+    list-style-type: none;
+}
+
+.contact-info h3, .education h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-info ul li, .education ul li {
+    font-size: 18px;
+    color: #555;
+}
+
+.contact-info ul li:hover {
+    color: #26998c;
+    transition: color 0.3s ease;
+}

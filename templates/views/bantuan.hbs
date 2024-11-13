@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bantuan</title> <!-- Hanya satu tag title -->
+    <link rel="icon" href="/img/logo.png">
+    <link rel="stylesheet" href="/css/styles.css"> <!-- Menghubungkan dengan CSS baru -->
+</head>
+<body>
+    <div class="centered-container">
+        {{>header}} <!-- Menyertakan header -->
+        <div class="background-image"></div>
+        <div class="main-content">
+            <h1>Halaman Bantuan</h1>
+            <img src="/img/penjelasan-image.png" alt="Gambar Penjelasan" style="width: 250px;"> <!-- Gambar sebagai pelengkap penjelasan -->
+            <div class="content-section">
+                <p><b>Halaman ini digunakan untuk apa?</b> Halaman ini menyediakan informasi tentang cara penggunaan aplikasi serta memberikan panduan kepada pengguna dalam memahami fitur-fitur yang ada.</p>
+                <p><b>Apa itu API?</b> API (Application Programming Interface) adalah sekumpulan aturan yang memungkinkan berbagai aplikasi untuk berinteraksi atau saling bertukar data dengan satu sama lain.</p>
+                <p><b>API apa yang digunakan dalam aplikasi ini?</b> Aplikasi ini menggunakan API cuaca dari penyedia layanan cuaca terpercaya untuk menampilkan data cuaca secara real-time.</p>
+                <p><b>Salah satu pola arsitektur API adalah RESTful.</b> RESTful adalah arsitektur API yang memanfaatkan protokol HTTP dan sering digunakan karena kemudahan dalam pengembangan serta kecepatan dalam mengakses data.</p>
+            </div>
+        </div>
+        {{>footer}} <!-- Menyertakan footer -->
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+</html>

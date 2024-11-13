@@ -1,0 +1,71 @@
+.main-content {
+  flex-grow: 1;
+}
+
+body {
+  color: #333333;
+  font-family: arial;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(/img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header {
+  margin-bottom: 48px;
+  position: sticky;
+  top: 0;
+  background-color: #ffffffcc; /* Transparansi background */
+  backdrop-filter: blur(5px); /* Efek blur pada background */
+  z-index: 10; /* Agar berada di atas elemen lainnya */
+  border-radius: 15px;
+  padding: 15px;
+}
+
+header a {
+  color: #888888;
+  margin-right: 16px;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 64px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  color: grey;
+}
+
+.faq-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.faq-list .faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+.faq-item p {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 0.5rem;
+}
+
+footer {
+  color: #888888;
+  border-top: 1px solid #eeeeee;
+  margin-top: 16px;
+  padding: 16px 0;
+}
